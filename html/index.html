@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ufc-8"  lang="pt-br">
+    <meta name="viewport" content="width= devia-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title> Organiza MAis </title>
+</head>
+    
+<body>
+
+    <header>
+        <h1> Organiza Mais </h1>
+    </header>
+
+    <main>
+        <div id="Cadastro">
+            <h2> Adicionar Produtos </h2>
+            <input type="text" id="nome" placeholder="nome do produto">
+            <input type="number" id="quantidade" placeholder="quantidade" step="1" min="1">
+            <input type="number" id="preco" placeholder="preco de venda" step="0.01" min="0">
+            <button id="adicionar"> Adicionar </button>            
+        </div>
+
+        <div id="tabela">
+          <h2> Produtos Cadastrados </h2>
+          <table>
+            <thead>
+              <tr>
+                <th> Produto </th>
+                <th> Quantidade </th>
+                <th> Preço </th>                
+              </tr>
+            </thead>
+            <tbody id="lista-produtos"></tbody>
+          </table>
+        </div>
+    </main>
+
+    <script src="../js/script.js"> </script>
+
+</body>
+
+</html>
